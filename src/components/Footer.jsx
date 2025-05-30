@@ -5,7 +5,6 @@ import { ImLocation } from 'react-icons/im';
 import { FaXTwitter } from "react-icons/fa6";
 import footbg from "../assets/images/footer-bg-2.png"
 const Footer = () => {
-    // Fake data
     const fakeSettings = {
         logo: "https://placehold.co/60x60",
         vision: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
@@ -28,7 +27,6 @@ const Footer = () => {
 
 
     return (
-        <>
             <footer>
                 <div className="img-box-footer">
                     <img
@@ -169,7 +167,6 @@ const Footer = () => {
                     ↑
                 </button>
             </footer>
-        </>
     );
 };
 

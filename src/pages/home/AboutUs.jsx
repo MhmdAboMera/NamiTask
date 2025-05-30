@@ -1,6 +1,5 @@
 import dog from '../../assets/images/dog.png'
 import rightImge from '../../assets/images/rightImge.png'
-import Scroll from '../../components/scroll'
 export default function AboutUs() {
     return (
         <>
@@ -35,7 +34,6 @@ export default function AboutUs() {
                             <p className='about-info our-team' style={{ backgroundColor: "#37A87D", color: "#FFD933" }} data-aos="fade-up-right">Our Team</p>
                         </div>
                     </div>
-                    {/* <Scroll /> */}
                 </div>
                 <img src={rightImge} alt="rightImge" className='rightImge' data-aos="fade-up-right" />
             </div>

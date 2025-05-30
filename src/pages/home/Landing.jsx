@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import mlogo from "../../assets/images/Mlogo.png"
-import Scroll from "../../components/scroll"
 import background1 from '../../assets/images/background-1.png'
 import background2 from '../../assets/images/background-2.jpeg'
 import background3 from '../../assets/images/background-3.jpeg'
@@ -48,7 +47,6 @@ export default function Landing() {
                         </div>
                     </div>
                 </div>
-                <Scroll />
             </div>
         </div>
     )

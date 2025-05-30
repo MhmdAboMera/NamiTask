@@ -20,7 +20,6 @@ const Header = () => {
         </Link>
         <div className="d-flex gap-2 justify-content-start align-items-center nav_contact">
           <Ri24HoursLine className='HoursLine' />
-          {/* <Ri24HoursLine className="HoursLine" /> */}
           <div className="d-flex flex-column justify-content-start">
             <div className="d-flex gap-2 align-items-center ">
               <Link to={`tel:01158091380`} className="phone text-decoration-none text-dark">

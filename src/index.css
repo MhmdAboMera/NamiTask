@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:wght@400&display=swap');
 
+body {
+    font-family: 'Jaro', sans-serif;
+}
 body {
     overflow-x: hidden;
 }
@@ -39,19 +43,7 @@ footer {
 
 }
 
-/* footer .container {
-    position: relative;
-    background: url("./assets/images/map-bg.png") center center no-repeat;
-    background-size: 100% 100%;
-} */
-
 @media (max-width:992px) {
-    footer {
-        background: url("./assets/images/footer-phone.png") center center no-repeat;
-        background-size: 100% 100%;
-        padding: 0 !important;
-    }
-
     .footer-bottom {
         display: none;
     }
@@ -179,7 +171,6 @@ footer .contact_icon {
 
 .foot-link:hover {
     transform: translateX(5px);
-    /* Adjust the horizontal translation as desired */
 }
 
 .foot-link svg {
@@ -188,7 +179,6 @@ footer .contact_icon {
 
 .foot-link:hover svg {
     transform: translateX(5px);
-    /* Adjust the horizontal translation as desired */
 }
 
 .service .service-link {
@@ -197,7 +187,6 @@ footer .contact_icon {
 
 .service .service-link:hover {
     transform: translateX(5px);
-    /* Adjust the vertical translation as desired */
 }
 
 .service .service-link svg {
@@ -206,7 +195,6 @@ footer .contact_icon {
 
 .service .service-link:hover svg {
     transform: translateX(5px);
-    /* Adjust the vertical translation as desired */
 }
 
 .footer-bottom {
@@ -227,6 +215,7 @@ footer .contact_icon {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Jaro', sans-serif;
 }
 
 .about-info {
