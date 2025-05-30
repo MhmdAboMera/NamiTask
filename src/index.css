@@ -217,6 +217,17 @@ html {
     color: #ad2026;
 }
 
+@media (max-width:768px) {
+    .header {
+        background-color: var(--main-color);
+    }
+    .navbar-toggler {
+        background-color: #fff !important;
+    }
+
+
+}
+
 /* end header */
 
 /* start footer */
