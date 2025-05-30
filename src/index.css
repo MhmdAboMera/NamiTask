@@ -22,8 +22,8 @@ html {
 
 /* start components */
 :root {
-    --main-color:#2196f3;
-    --main-color-alt:#1787e0;
+    --main-color:#1a3051;
+    --main-color-alt:#AD2026;
     --main-transition :.3s;
     --section-padding :100px ;
     --section-background: #ececec;
@@ -86,7 +86,7 @@ html {
     }
     100% {
         left: 0;
-        width: 50%;
+        width: 51%;
         height: 100%;
         border-radius: 0%;
     }
@@ -99,7 +99,7 @@ html {
     }
     100% {
         right: 0;
-        width: 50%;
+        width: 51%;
         height: 100%;
         border-radius: 0%;
     }
