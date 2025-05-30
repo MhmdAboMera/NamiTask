@@ -3,11 +3,11 @@ import rightImge from '../../assets/images/rightImge.png'
 export default function AboutUs() {
     return (
         <>
-            <div className="about-us py-3 position-relative">
+            <div className="about-us py-3 position-relative ">
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-12 col-md-6">
-                            <h1 className="display-4 fw-bold text-white"  data-aos="fade-up">we make sure your idea & Creation delivered Properly</h1>
+                            <h1 className="display-4 fw-bold text-white" data-aos="fade-up">we make sure your idea & Creation delivered Properly</h1>
                             <h3 className='my-3 text-white' data-aos="fade-up">Who Are <br /> We <span style={{ color: "rgb(220 90 53)" }}>?</span></h3>
                             <p className='text-white-50' style={{ fontSize: "12px", fontFamily: "sans-serif" }} data-aos="fade-up">MEDIAZONE IS AN INTEGRATED MARKETING SOLUTIONS AGENCY THAT PROVIDES OUTSTANDING AND EFFECTIVE SERVICES TO HELP GROW YOUR BUSINESS AND ACHIEVE OBJECTIVES, INCREASE YOUR BRAND VALUE AND AWARENESS.</p>
                         </div>
@@ -26,7 +26,7 @@ export default function AboutUs() {
                                 fontWeight: "300 !important",
                                 textTransform: "uppercase"
                             }}>
-                                About U<span style={{ zIndex: "2", position: "relative",fontFamily: "fantasy" }}>S</span>
+                                About U<span style={{ zIndex: "2", position: "relative", fontFamily: "fantasy" }}>S</span>
                             </div>
                             <p className='about-info Who text-white' style={{ backgroundColor: "red" }} data-aos="fade-up-right">Who are we</p>
                             <p className='about-info Projects' style={{ backgroundColor: "#FFD933", color: "#206BFF" }} data-aos="fade-down">Our Projects</p>

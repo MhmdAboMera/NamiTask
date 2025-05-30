@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Ri24HoursLine } from 'react-icons/ri';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 
 
 const Header = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
-    <header className="header">
+    <header className="header mb-5">
       <div className="d-flex container justify-content-between align-items-center d-none d-md-none d-lg-flex ">
         <Link to="/" aria-label="logo">
           <img
@@ -36,6 +41,17 @@ const Header = () => {
       </div>
       <nav className={`navbar navbar-expand-lg`}>
         <div className="container">
+          <Link to="/" aria-label="logo">
+            <img
+              src={"https://placehold.co/50x50"}
+              className="logo d-sm-block none d-lg-none"
+              width={"60px"}
+              height={"60px"}
+              alt="logo"
+              title="logo"
+              loading="lazy"
+            />
+          </Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -43,36 +59,26 @@ const Header = () => {
 
             <ul className="navbar-nav text-light">
               <li className="nav-item">
-                <a className="nav-link text-light active" aria-current="page" href="#">Home</a>
+                <NavLink className="nav-link text-light active" aria-current="page" to={"/"}>Home</NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-light" href="#">About us</a>
+                <NavLink className="nav-link text-light" to={"/about"}>About us</NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-light" href="#">Features </a>
+                <NavLink className="nav-link text-light" to={"/features"}>Features </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-light" href="#">Pricing </a>
+                <NavLink className="nav-link text-light" to={"/pricing"}>Pricing </NavLink>
               </li>
               <li className="nav-item ">
                 <a className="nav-link text-light" href="#">Services </a>
               </li>
               <li className="nav-item ">
-                <a className="nav-link text-light" href="#">Contact us </a>
+                <NavLink className="nav-link text-light" to={"/contact"}>Contact us </NavLink>
               </li>
             </ul>
           </div>
-           <Link to="/" aria-label="logo">
-          <img
-            src={"https://placehold.co/50x50"}
-            className="logo d-sm-block none d-lg-none"
-            width={"60px"}
-            height={"60px"}
-            alt="logo"
-            title="logo"
-            loading="lazy"
-          />
-        </Link>
+
         </div>
       </nav>
     </header>

@@ -1,53 +1,34 @@
-import { useState, useEffect } from "react";
-import mlogo from "../../assets/images/Mlogo.png"
-import background1 from '../../assets/images/background-1.png'
-import background2 from '../../assets/images/background-2.jpeg'
-import background3 from '../../assets/images/background-3.jpeg'
+import React from "react";
+import CustomButton from "../../components/CustomButton";
 
-export default function Landing() {
-    const [currentBackground, setCurrentBackground] = useState(background3);
-
-    useEffect(() => {
-        // Change background after 8 seconds (matches your animation duration)
-        const timer = setTimeout(() => {
-            setCurrentBackground(background2);
-        }, 8000);
-
-        return () => {
-            clearTimeout(timer);
-        };
-    }, []);
+const Landing = () => {
+    // Fake data to replace API call
+    const fakeData = {
+        name_en: "we make it simple, but..  SIGNIFICANT",
+        mission: "You bring the vision, we bring it to life with clarity, care, and creativity",
+    };
 
     return (
-        <div className="landing" >
-            <div className="background-layer" style={{
-                backgroundImage: `url(${currentBackground})`,
-                backgroundSize: `${currentBackground == background2 ? "contain" : "cover"}`
-            }} ></div>
+        <div className="kfs-kafrElSheikh py-5 mt-5 mt-lg-2">
             <div className="container">
-                <div className="logo-img m-auto justify-content-center align-items-center">
-                    <img src={mlogo} className="d-block m-auto landing-logo" alt="logo" />
-                </div>
-                <div className="row align-items-end mt-3">
-                    <div className="col-sm-12 col-md-8">
-                        <div className="box-text">
-                            <h1 className="text-white fw-bold ">we make it simple, but..</h1>
-                            <h1 className="heed-text fw-bold ">SIGNIFICANT</h1>
+                <div className="row">
+                    <div className="col-md-6">
+                        <div className="heed fs-2 fw-bold mb-sm-2 mb-md-5">
+                            {fakeData.name_en}
                         </div>
-                    </div>
-                    <div className="col-sm-12 col-md-4">
-                        <div className="text-light sm-text small-text ">
-                            <small>Marketing Agency</small>
-                            <br />
-                            <small className="text-end d-block mt-3">
-                                Egypt
-                                <br />
-                                EST  2010
-                            </small>
+                        <p className="m-0 fs-5">
+                            {fakeData.mission}
+                        </p>
+                        <div className="row mt-3">
+                            <div className="col-4">
+                                <CustomButton text={"For More"} color="#000" to={'/about'} routeTo={'/about'} />
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
+
+export default Landing;
