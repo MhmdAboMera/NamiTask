@@ -2,7 +2,6 @@ import React from "react";
 import CustomButton from "../../components/CustomButton";
 import girl from '../../assets/images/girl.png'
 const Landing = () => {
-    // Fake data to replace API call
     const fakeData = {
         name_en: "we make it simple, but..  SIGNIFICANT",
         mission: "You bring the vision, we bring it to life with clarity, care, and creativity",

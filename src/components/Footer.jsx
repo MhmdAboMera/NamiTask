@@ -9,7 +9,7 @@ const Footer = () => {
         logo: "https://placehold.co/60x60",
         vision: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
         tel1: "+20 115 8091 380",
-        email: "mhmdkhaled130@gmail.com",
+        email: "mhmdkhaled@gmail.com",
         address: "123 Main Street, Cairo, Egypt",
         twitter: "https://twitter.com/company",
         linkedin: "https://linkedin.com/company",
@@ -159,13 +159,6 @@ const Footer = () => {
             </div>
 
             {/* Back to Top Button */}
-            {/* <button
-                className="back-to-top btn btn-primary position-fixed"
-                style={{ bottom: '20px', right: '20px', zIndex: 1000 }}
-                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            >
-                ↑
-            </button> */}
             <button
                 type="button"
                 className="vp-back-to-top-button"

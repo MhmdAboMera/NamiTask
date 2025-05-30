@@ -1,5 +1,4 @@
 import React from 'react';
-// import './Features.css';
 import Features1 from "../../assets/images/Features-1.jfif"
 import Features2 from "../../assets/images/Features-2.jfif"
 import Features3 from "../../assets/images/Features-3.jfif"

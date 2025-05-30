@@ -2,7 +2,6 @@ import React from 'react';
 import pricing1 from "../../assets/images/hosting-basic.png"
 import pricing2 from "../../assets/images/hosting-advanced.png"
 import pricing3 from "../../assets/images/hosting-professional.png"
-// import './Pricing.css';
 
 const Pricing = () => {
   return (
