@@ -353,17 +353,12 @@ footer .contact_icon {
 
 }
 
-/* end footer css */
-
-
 
 /*start BackToTopButton css*/
 .vp-back-to-top-button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    /* left: 20px; */
-
     background-color: var(--main-color);
     color: white;
     border: none;
@@ -400,3 +395,6 @@ footer .contact_icon {
 }
 
 /*end BackToTopButton css*/
+
+
+/* end footer css */

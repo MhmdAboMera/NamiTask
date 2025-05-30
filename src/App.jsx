@@ -31,8 +31,6 @@ function App() {
           <Route path="/contact" element={<div className='pt-5 mt-3 mt-lg-5 '><ContactForm /></div>} />
         </Routes>
       </MainLayout>
-
-
     </>
   )
 }
