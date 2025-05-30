@@ -61,7 +61,7 @@ const ContactForm = () => {
                             </button>
                         </div>
                         <div className="col-sm-12 col-md-6">
-                            <div class="image d-none d-md-block">
+                            <div class="image d-none d-md-block" data-aos="fade-up">
                                 <img src={contact} alt="contact" width={"100%"}
                                     title="logo"
                                     loading="lazy" />
